@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@helper AddHelper(int a, int b)
+{
+    <label> Addition of two Nos @(a + b)</label>
+
+}<br><br><br>
+<div>
+    @AddHelper(200, 300)<br />
+
+</div>
+
+<div id="myDiv" style="background-color:aqua;">
+    @AddHelper(200, 300)
+
+
+</div>
+
